@@ -1,5 +1,8 @@
 import * as THREE from 'three';
+import { inject } from '@vercel/analytics';
 import './style.css';
+
+inject();
 
 const canvas = document.querySelector('#match-scene');
 const header = document.querySelector('.site-header');
