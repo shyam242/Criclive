@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Criclive match centre: live cricket scores, ball-by-ball commentary, scorecards, and the story behind every turning point." />
+    <meta name="theme-color" content="#1264bd" />
+    <title>Criclive — Live cricket scores and stories</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Criclive home">criclive<span class="wordmark-ball">.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-active" href="#top">Home</a>
+        <a href="#match">Live Scores</a>
+        <a href="#scorecard">Series</a>
+        <a href="#scorecard">Teams</a>
+        <a href="#commentary">News</a>
+        <a href="#story">Features</a>
+        <a href="#story">Videos</a>
+        <a href="#scorecard">Stats</a>
+        <a href="#clubs">Games</a>
+      </nav>
+      <div class="header-tools">
+        <span class="edition-label">EDITION <b>IN</b></span>
+        <button class="icon-button" type="button" aria-label="Search Criclive"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+        <button class="icon-button notification-button" type="button" aria-label="Notifications"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"></path></svg></button>
+      </div>
+    </header>
+
+    <nav class="secondary-nav" aria-label="Cricket navigation">
+      <a href="#match">Live Cricket Matches</a>
+      <a href="#scorecard">Cricket Series</a>
+      <a href="#commentary">Cricket News</a>
+      <a href="#story">Cricket Shorts</a>
+      <a href="#story">Cricket Videos</a>
+      <a href="#clubs">Fans Discussion</a>
+      <a href="#clubs">More <span>⌄</span></a>
+    </nav>
+
+    <main id="top">
+      <section class="cinematic-stage" id="scroll-replay" aria-label="Explore Criclive cricket features">
+        <div class="cinematic-sticky" aria-hidden="true">
+          <canvas id="match-scene"></canvas>
+          <div class="cinematic-wash"></div>
+          <div class="cinematic-score"><span><i></i> CRICLIVE CRICKET HUB</span><b>SCORES <small>· STORIES · STATS</small></b></div>
+          <div class="cinematic-caption" id="cinematic-caption">THE BOWLER TURNS AT THE MARK</div>
+          <div class="cinematic-brand" id="cinematic-brand"><span>criclive</span><i>.</i></div>
+          <div class="cinematic-progress"><i id="cinematic-progress"></i></div>
+        </div>
+        <div class="cinematic-beats">
+          <article class="cinematic-beat">
+            <div class="cinematic-copy">
+              <span class="cinematic-kicker"><i></i> CRICKET / ALL IN ONE PLACE</span>
+              <h2>Every match.<br /><em>Every moment.</em></h2>
+              <p>Live scores, ball-by-ball updates, and stories that bring the game closer.</p>
+              <a class="scroll-invitation" href="#live-scores-feature"><span>↓</span> SCROLL TO EXPLORE</a>
+            </div>
+            <span class="cinematic-count">01 <i>/</i> 04</span>
+          </article>
+          <article class="cinematic-beat" id="live-scores-feature">
+            <div class="cinematic-copy">
+              <span class="cinematic-kicker"><i></i> LIVE SCORES / BALL BY BALL</span>
+              <h2>Follow every delivery.<br /><em>As it happens.</em></h2>
+              <p>Stay close with live scorecards, commentary, and the details that shape every innings.</p>
+            </div>
+            <span class="cinematic-count">02 <i>/</i> 04</span>
+          </article>
+          <article class="cinematic-beat">
+            <div class="cinematic-copy">
+              <span class="cinematic-kicker"><i></i> SCORE STORIES / MADE TO SHARE</span>
+              <h2>More than numbers.<br /><em>See the story.</em></h2>
+              <p>Turn key moments into visual recaps, useful stats, and stories worth sharing.</p>
+            </div>
+            <span class="cinematic-count">03 <i>/</i> 04</span>
+          </article>
+          <article class="cinematic-beat">
+            <div class="cinematic-copy">
+              <span class="cinematic-kicker"><i></i> FOR EVERY LEVEL / CLUB TO INTERNATIONAL</span>
+              <h2>Your team.<br /><em>Your cricket home.</em></h2>
+              <p>Find fixtures, rankings, leagues, news, and conversations—from local clubs to the world stage.</p>
+            </div>
+            <span class="cinematic-count">04 <i>/</i> 04</span>
+          </article>
+        </div>
+      </section>
+
+      <div class="match-feed">
+        <nav class="match-filters" aria-label="Match filters">
+          <a class="filter-active" href="#demo-matches">Matches <b>(24)</b></a>
+          <a href="#demo-matches">International</a>
+          <a href="#demo-matches">Women's cricket</a>
+          <a href="#demo-matches">Domestic</a>
+          <a href="#demo-matches">T20 leagues</a>
+          <a href="#demo-matches">Upcoming</a>
+        </nav>
+        <div class="match-ticker" aria-label="Featured match">
+          <span class="ticker-label">ON NOW</span>
+          <span class="ticker-match"><b>IND</b> <strong>148/3</strong> <i>16.2 ov</i></span>
+          <span class="ticker-divider"></span>
+          <span class="ticker-context">India need 52 from 22 balls</span>
+          <a href="#match" aria-label="Go to India versus Australia match">VIEW MATCH <span>↗</span></a>
+        </div>
+        <nav class="match-quicklinks" aria-label="Popular cricket links">
+          <a href="#clubs">Criclive Games <span>›</span></a>
+          <a href="#scorecard">India fixtures <span>›</span></a>
+          <a href="#scorecard">IPL <span>›</span></a>
+          <a href="#scorecard">WTC series &amp; results <span>›</span></a>
+          <a href="#scorecard">Rankings <span>›</span></a>
+        </nav>
+
+        <div class="page-shell">
+        <section class="match-shelf" id="demo-matches" aria-labelledby="match-shelf-title">
+          <div class="match-shelf-heading">
+            <div>
+              <p class="section-kicker">AROUND THE GROUNDS <span>DEMO FIXTURES</span></p>
+              <h2 id="match-shelf-title">Matches today</h2>
+            </div>
+            <a class="subtle-link" href="#scorecard">Fixtures &amp; results <span>↗</span></a>
+          </div>
+          <div class="match-card-track" aria-label="Demo cricket match cards">
+            <article class="demo-match-card">
+              <div class="demo-match-meta"><span>Match 31 · India v Australia</span><b class="live-badge">LIVE</b></div>
+              <div class="demo-team-row"><span class="team-flag flag-india" aria-hidden="true"></span><strong>India</strong><b>148/3 <small>(16.2 ov)</small></b></div>
+              <div class="demo-team-row"><span class="team-flag flag-australia" aria-hidden="true"></span><strong>Australia</strong><b>199/5 <small>(20 ov)</small></b></div>
+              <p class="demo-match-status status-live">India need 52 from 22 balls</p>
+              <nav class="demo-match-actions" aria-label="India versus Australia links"><a href="#scorecard">Scorecard</a><a href="#match">Match centre</a><a href="#commentary">Commentary</a></nav>
+            </article>
+            <article class="demo-match-card">
+              <div class="demo-match-meta"><span>2nd Test · India tour of New Zealand</span><b>TEST</b></div>
+              <div class="demo-team-row"><span class="team-flag flag-new-zealand" aria-hidden="true"></span><strong>New Zealand</strong><b>—</b></div>
+              <div class="demo-team-row"><span class="team-flag flag-india" aria-hidden="true"></span><strong>India</strong><b>—</b></div>
+              <p class="demo-match-status status-upcoming">Tomorrow · 3:30 AM</p>
+              <nav class="demo-match-actions" aria-label="New Zealand versus India links"><a href="#scorecard">Preview</a><a href="#scorecard">Squads</a><a href="#commentary">Schedule</a></nav>
+            </article>
+            <article class="demo-match-card">
+              <div class="demo-match-meta"><span>35th Match · Women's Big Bash</span><b>T20</b></div>
+              <div class="demo-team-row"><span class="team-flag flag-australia" aria-hidden="true"></span><strong>Melbourne Stars W</strong><b>160/7 <small>(20 ov)</small></b></div>
+              <div class="demo-team-row"><span class="team-flag flag-australia" aria-hidden="true"></span><strong>Sydney Sixers W</strong><b>161/4 <small>(19.4 ov)</small></b></div>
+              <p class="demo-match-status status-result">Sydney Sixers Women won by 6 wickets</p>
+              <nav class="demo-match-actions" aria-label="Melbourne Stars versus Sydney Sixers links"><a href="#scorecard">Scorecard</a><a href="#scorecard">Points table</a></nav>
+            </article>
+            <article class="demo-match-card">
+              <div class="demo-match-meta"><span>3rd T20 · Australia v England</span><b class="live-badge">LIVE</b></div>
+              <div class="demo-team-row"><span class="team-flag flag-australia" aria-hidden="true"></span><strong>Australia</strong><b>172/5 <small>(18.2 ov)</small></b></div>
+              <div class="demo-team-row"><span class="team-flag flag-england" aria-hidden="true"></span><strong>England</strong><b>Yet to bat</b></div>
+              <p class="demo-match-status status-live">Australia need 11 from 10 balls</p>
+              <nav class="demo-match-actions" aria-label="Australia versus England links"><a href="#commentary">Commentary</a><a href="#scorecard">Scorecard</a></nav>
+            </article>
+          </div>
+        </section>
+        <div class="breadcrumbs"><span>INTERNATIONAL</span><i>/</i><span>T20</span><i>/</i><span>2ND INNINGS</span></div>
+
+        <section class="match-layout" id="match" aria-labelledby="match-title">
+          <div class="match-main">
+            <div class="match-heading">
+              <div>
+                <p class="eyebrow"><span class="live-pulse"></span> MATCH 31 <span class="eyebrow-separator">·</span> DEMO SCORE</p>
+                <h1 id="match-title">India <span>v</span> Australia</h1>
+                <p class="match-subtitle">Night match · 2nd innings · Target 200</p>
+              </div>
+              <div class="match-date"><span>THU, 26 NOV</span><b>20:14</b> LOCAL</div>
+            </div>
+
+            <div class="score-panel">
+              <div class="score-panel-top">
+                <span><i class="live-pulse"></i> INDIA BATTING</span>
+                <span>16.2 OVERS <b>·</b> CRR 9.06</span>
+              </div>
+              <div class="score-main">
+                <div class="team-identity">
+                  <span class="team-monogram india-monogram">IND</span>
+                  <div><b>India</b><small>2nd innings</small></div>
+                </div>
+                <div class="big-score">148<span>/3</span></div>
+                <div class="score-overs"><b>16.2</b><span>OVERS</span></div>
+              </div>
+              <div class="chase-strip">
+                <div><span>NEED</span><b>52 <small>from 22 balls</small></b></div>
+                <div><span>REQUIRED RATE</span><b>14.18 <small>runs / over</small></b></div>
+                <div><span>AUSTRALIA</span><b>199/5 <small>20 overs</small></b></div>
+              </div>
+              <div class="score-panel-footer">
+                <span><b>Last wicket</b> Ruturaj Gaikwad c Warner b Zampa 34 (22)</span>
+                <span>Target <b>200</b></span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="moment-panel" aria-label="Current match moment">
+            <div class="moment-panel-top"><span>THE MOMENT</span><span>16.2 <i>OV</i></span></div>
+            <div class="moment-score">+<b>8</b><small>OFF 2 BALLS</small></div>
+            <h2>Two shots.<br /><em>Eight runs.</em></h2>
+            <p>Suryakumar finds the rope twice in a row. India move past 140 and the chase has a pulse again.</p>
+            <a href="#story">See how it happened <span>↓</span></a>
+            <div class="moment-decoration" aria-hidden="true"><span>4</span><span>4</span></div>
+          </aside>
+        </section>
+
+        <nav class="section-nav" aria-label="Match sections">
+          <a class="selected" href="#match">Match centre</a>
+          <a href="#scorecard">Scorecard</a>
+          <a href="#story">The over</a>
+          <a href="#commentary">Commentary</a>
+        </nav>
+
+        <section class="over-section" id="story" aria-labelledby="story-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">CRICLIVE SCORE STORY <span>01 / 03</span></p>
+              <h2 id="story-title">The over that changed<br class="desktop-break" /> the chase.</h2>
+            </div>
+            <p class="section-intro">Not just the score. The sequence, the shot, and what it means from here.</p>
+          </div>
+
+          <div class="over-card">
+            <div class="over-card-head">
+              <div><span class="over-number">16</span><span class="over-label">THE 17TH OVER</span></div>
+              <button class="replay-button" id="replay-over" type="button"><span aria-hidden="true">↻</span> Replay the over</button>
+            </div>
+            <div class="delivery-track" aria-label="Ball-by-ball sequence for over 16">
+              <button class="delivery-ball selected" type="button" aria-pressed="true" data-delivery="0">
+                <span class="delivery-index">16.1</span><b>4</b><small>FOUR</small>
+              </button>
+              <button class="delivery-ball" type="button" aria-pressed="false" data-delivery="1">
+                <span class="delivery-index">16.2</span><b>4</b><small>FOUR</small>
+              </button>
+              <span class="delivery-ball pending"><span class="delivery-index">16.3</span><b>·</b><small>TO COME</small></span>
+              <span class="delivery-ball pending"><span class="delivery-index">16.4</span><b>·</b><small>TO COME</small></span>
+              <span class="delivery-ball pending"><span class="delivery-index">16.5</span><b>·</b><small>TO COME</small></span>
+              <span class="delivery-ball pending"><span class="delivery-index">16.6</span><b>·</b><small>TO COME</small></span>
+              <div class="over-total"><span>THIS OVER</span><b>8 <small>runs</small></b></div>
+            </div>
+            <div class="over-insight">
+              <div class="insight-copy" aria-live="polite">
+                <span class="insight-tag"><i></i> <span id="delivery-label">16.1 · THE FIRST BOUNDARY</span></span>
+                <h3 id="delivery-title">A little room.<br /><em>A lot of timing.</em></h3>
+                <p id="delivery-copy">Suryakumar waits for width and opens the face late. The ball races behind point before the field can turn.</p>
+                <div class="shot-detail"><span>SHOT</span><b id="shot-name">Late cut</b><span class="detail-divider"></span><span>RESULT</span><b>FOUR</b></div>
+              </div>
+              <div class="shot-visual">
+                <div class="shot-visual-head"><span>SHOT TRACKER</span><span>OFF SIDE <i>↗</i></span></div>
+                <svg class="shot-map" viewBox="0 0 360 205" role="img" aria-label="Shot map showing a boundary behind point">
+                  <defs>
+                    <marker id="shot-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+                      <path d="M0 0L7 3.5L0 7Z" fill="#ed704f" />
+                    </marker>
+                  </defs>
+                  <rect x="14" y="16" width="332" height="173" rx="8" fill="#f3f7f3" />
+                  <path d="M28 103H332M180 28V177" stroke="#dfe8df" stroke-width="1" stroke-dasharray="3 5" />
+                  <rect x="166" y="82" width="28" height="42" rx="2" fill="#c6a579" />
+                  <path d="M164 125L94 64" class="shot-trail trail-first" marker-end="url(#shot-arrow)" />
+                  <path d="M164 125L65 86" class="shot-trail trail-second" marker-end="url(#shot-arrow)" />
+                  <circle cx="164" cy="125" r="5" fill="#17684f" />
+                  <circle cx="94" cy="64" r="7" class="shot-landing landing-first" />
+                  <circle cx="65" cy="86" r="7" class="shot-landing landing-second" />
+                  <text x="25" y="35" class="map-label">THIRD MAN</text>
+                  <text x="253" y="177" class="map-label">LEG SIDE</text>
+                  <text x="26" y="177" class="map-label">OFF SIDE</text>
+                </svg>
+                <div class="shot-legend"><span><i class="legend-dot"></i> Ball landed</span><span>BOUNDARY · 4 RUNS</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-story" aria-label="Scroll through the turning point">
+            <div class="scroll-story-visual" aria-live="polite">
+              <div class="scroll-visual-head"><span>THE CHASE, BALL BY BALL</span><span id="scroll-story-over">16.1 OV</span></div>
+              <div class="scroll-scoreline">
+                <div><small>INDIA</small><strong id="scroll-story-score">144/3</strong></div>
+                <b id="scroll-story-runs">+4</b>
+              </div>
+              <div class="scroll-delivery-path" aria-hidden="true">
+                <span>15.6 <b>2</b></span><i></i><span class="path-current" data-path-ball="0">16.1 <b>4</b></span><i></i><span data-path-ball="1">16.2 <b>4</b></span>
+              </div>
+              <div class="scroll-story-callout">
+                <span id="scroll-story-shot">LATE CUT · BEHIND POINT</span>
+                <p id="scroll-story-context">India move from 60 off 24 to 56 off 23.</p>
+              </div>
+              <div class="scroll-pressure">
+                <div><span>WIN CHANCE</span><b id="scroll-story-pressure">58%</b></div>
+                <div class="scroll-pressure-meter"><i id="scroll-story-meter"></i></div>
+                <div class="scroll-pressure-labels"><span>49% · 15 OV</span><span>68% · NOW</span></div>
+              </div>
+              <div class="scroll-story-hint"><span class="hint-arrow">↓</span> KEEP SCROLLING TO FOLLOW THE OVER</div>
+            </div>
+            <div class="scroll-story-steps">
+              <article class="scroll-story-step is-current" data-story-step="0">
+                <span class="step-index">01 <i>—</i> THE FIRST GAP</span>
+                <h3>Width outside off.<br /><em>Room to free the hands.</em></h3>
+                <p>At 16.1, the ball is just wide enough. Suryakumar opens the face and sends a late cut behind point. Four runs, no risk through the air.</p>
+                <span class="step-score">140/3 <i>→</i> 144/3 <b>+4</b></span>
+              </article>
+              <article class="scroll-story-step" data-story-step="1">
+                <span class="step-index">02 <i>—</i> THE ANSWER</span>
+                <h3>The bowler goes fuller.<br /><em>The batter goes straighter.</em></h3>
+                <p>At 16.2, Suryakumar meets it early and beats the sweeper. Two balls, two boundaries. India are suddenly eight closer to the target.</p>
+                <span class="step-score">144/3 <i>→</i> 148/3 <b>+4</b></span>
+              </article>
+              <article class="scroll-story-step" data-story-step="2">
+                <span class="step-index">03 <i>—</i> THE EQUATION</span>
+                <h3>Eight from two.<br /><em>The chase has a pulse.</em></h3>
+                <p>India still need 52 from 22, but the boundary options are opening up. The asking rate is 14.18; Suryakumar and Hardik have added 51 together.</p>
+                <span class="step-score">60 / 24 <i>→</i> 52 / 22 <b>+19 pts</b></span>
+              </article>
+            </div>
+          </div>
+
+          <div class="story-stats">
+            <article class="story-stat">
+              <span>CHASE PRESSURE</span>
+              <div class="pressure-line"><b>68%</b><span>India win chance</span><strong>↑ 19 pts</strong></div>
+              <svg class="pressure-chart" viewBox="0 0 360 66" role="img" aria-label="India's estimated win chance increased from 49 percent to 68 percent">
+                <path d="M0 52C38 51 49 37 81 42S128 48 160 34 210 42 239 22 285 31 310 16 341 17 360 7" fill="none" stroke="#17684f" stroke-width="3" />
+                <path d="M0 52C38 51 49 37 81 42S128 48 160 34 210 42 239 22 285 31 310 16 341 17 360 7V66H0Z" fill="url(#pressure-fill)" opacity=".15" />
+                <defs><linearGradient id="pressure-fill" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#17684f"/><stop offset="1" stop-color="#fff"/></linearGradient></defs>
+              </svg>
+              <div class="stat-foot"><span>15 OV · 49%</span><span>16.2 OV · 68%</span></div>
+            </article>
+            <article class="story-stat partnership-stat">
+              <span>AT THE CREASE</span>
+              <div class="partners"><div><b>58<span>*</span></b><small>S. YADAV · 31 BALLS</small></div><i></i><div><b>31<span>*</span></b><small>H. PANDYA · 18 BALLS</small></div></div>
+              <div class="partnership-line"><span>PARTNERSHIP</span><b>51 <small>runs · 24 balls</small></b></div>
+              <div class="partnership-meter"><i></i></div>
+            </article>
+          </div>
+          <p class="demo-note">Match centre and win-chance figures shown with illustrative demo data.</p>
+        </section>
+
+        <section class="scorecard-section" id="scorecard" aria-labelledby="scorecard-title">
+          <div class="section-heading compact-heading">
+            <div><p class="section-kicker">THE NUMBERS</p><h2 id="scorecard-title">Scorecard</h2></div>
+            <span class="innings-label">INDIA · 2ND INNINGS</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead><tr><th>BATTER</th><th>HOW OUT</th><th>R</th><th>B</th><th>4s</th><th>6s</th><th>SR</th></tr></thead>
+              <tbody>
+                <tr><td><b>Suryakumar Yadav</b><small>Right hand bat</small></td><td>not out</td><td>58</td><td>31</td><td>5</td><td>3</td><td>187.10</td></tr>
+                <tr><td><b>Hardik Pandya</b><small>Right hand bat</small></td><td>not out</td><td>31</td><td>18</td><td>2</td><td>2</td><td>172.22</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="innings-summary"><span>EXTRAS <b>9</b> <small>(b 0, lb 2, w 7, nb 0)</small></span><span>TOTAL <b>148/3</b> <small>(16.2 overs)</small></span><span>FALL OF WICKETS <b>42/1 · 81/2 · 106/3</b></span></div>
+        </section>
+
+        <section class="commentary-section" id="commentary" aria-labelledby="commentary-title">
+          <div class="section-heading compact-heading">
+            <div><p class="section-kicker">BALL BY BALL</p><h2 id="commentary-title">Commentary</h2></div>
+            <a class="subtle-link" href="#story">Jump to the turning point ↑</a>
+          </div>
+          <ol class="commentary-list">
+            <li class="commentary-highlight"><b>16.2</b><span class="commentary-result">4</span><p><strong>FOUR!</strong> Another one. Suryakumar uses the pace and beats deep third. That's eight from the first two balls.</p></li>
+            <li class="commentary-highlight"><b>16.1</b><span class="commentary-result">4</span><p><strong>FOUR.</strong> Width offered, width taken. Late hands send it fine past the ring.</p></li>
+            <li><b>15.6</b><span class="commentary-result quiet-result">2</span><p>Two from the final ball of the 16th over. India need 60 from 24 at the start of the 17th.</p></li>
+          </ol>
+        </section>
+
+        <section class="clubs-banner" id="clubs">
+          <div class="clubs-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div><p class="section-kicker">FOR EVERY LEVEL OF THE GAME</p><h2>Your league.<br />Your score story.</h2><p>Campus finals, club derbies, Sunday leagues. The match centre should belong to everyone who plays.</p></div>
+          <a href="#top" class="clubs-link">Explore club cricket <span>↗</span></a>
+        </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="wordmark" href="#top" aria-label="Criclive home">criclive<span class="wordmark-ball">.</span></a>
+          <p class="footer-tagline">Every match. Every moment.</p>
+          <p class="footer-description">Live scores, the stories behind every over, and a home for cricket at every level.</p>
+        </div>
+        <nav class="footer-links" aria-label="Match centre links">
+          <h2>Match centre</h2>
+          <a href="#match">Live scores</a>
+          <a href="#scorecard">Scorecard</a>
+          <a href="#commentary">Ball-by-ball</a>
+        </nav>
+        <nav class="footer-links" aria-label="Explore Criclive links">
+          <h2>Explore</h2>
+          <a href="#story">Score stories</a>
+          <a href="#demo-matches">Matches today</a>
+          <a href="#clubs">Club cricket</a>
+        </nav>
+        <nav class="footer-links" aria-label="More Criclive links">
+          <h2>More Criclive</h2>
+          <a href="#clubs">For every level</a>
+          <a href="#top">Back to the top</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Criclive</span>
+        <p>Match scores and statistics are illustrative demo data.</p>
+        <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
